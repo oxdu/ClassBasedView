@@ -1,0 +1,7 @@
+#Type which file not need to upload
+
+venv
+db.sqlite3
+.env
+__pycache__
+migrations

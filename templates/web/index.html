@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Iphones</h1>
+{% for p in produ %}
+    <h1>{{p.name}}</h1>
+    <h2>{{p.price}}</h2>
+
+    <a href="{% url "web:details"  p.id%}">More Details</a>
+    {% endfor %}
+</body>
+</html>
